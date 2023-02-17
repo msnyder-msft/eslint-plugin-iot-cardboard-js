@@ -1,5 +1,5 @@
 {
-    "name": "@microsoft/eslint-plugin-iot-cardboard-js",
+    "name": "eslint-plugin-iot-cardboard-js",
     "version": "1.0.0",
     "description": "Eslint rules for iot-cardboard-js project",
     "scripts": {
