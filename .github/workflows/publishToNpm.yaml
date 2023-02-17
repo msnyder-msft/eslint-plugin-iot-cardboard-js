@@ -1,4 +1,5 @@
 name: PublishToNpm
+on:
 jobs:
     publish:
         runs-on: ubuntu-latest
