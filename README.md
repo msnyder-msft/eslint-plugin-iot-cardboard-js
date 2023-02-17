@@ -42,7 +42,7 @@ This rule checks that all properties of a class have an appropriate `@IsDefined(
 This rule also checks that both `@IsDefined()` and `@IsOptional()` are not used on the same property because this doesn't make sense.
 
 The rule will ignore any classes that have 0 class-validator decorators. This is to avoid errors for classes that are not used for validation.
-d
+
 This PASSES - all properties are decorated correctly
 
 ```ts

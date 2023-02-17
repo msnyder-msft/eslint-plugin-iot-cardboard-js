@@ -1,7 +1,7 @@
 {
-    "name": "@microsoft/eslint-plugin-cardboard-iot-js",
+    "name": "@microsoft/eslint-plugin-iot-cardboard-js",
     "version": "1.0.0",
-    "description": "Eslint rules for cardboard-iot-js project",
+    "description": "Eslint rules for iot-cardboard-js project",
     "scripts": {
         "clean": "rm -Rf ./dist/",
         "build:ci": "npm run build",
