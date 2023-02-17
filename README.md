@@ -1,5 +1,5 @@
 ![npm](https://img.shields.io/npm/v/@microsoft/eslint-plugin-cardboard-iot-js.svg?color=red)
-![npm-tag](https://badgen.net/github/tag/darraghoriordan/eslint-plugin-nestjs-typed)
+![npm-tag](https://badgen.net/github/tag/msnyder-msft/eslint-plugin-iot-cardboard-js)
 
 ## Why use this package?
 
