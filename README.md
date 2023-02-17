@@ -22,56 +22,31 @@ module.exports = {
     env: {
         es6: true,
     },
-    extends: ["plugin:@darraghor/nestjs-typed/recommended"],
+    extends: ["plugin:iot-cardboard-js/recommended"],
     parser: "@typescript-eslint/parser",
     parserOptions: {
         project: ["./tsconfig.json"],
         sourceType: "module",
         ecmaVersion: "es2019",
     },
-    plugins: ["@darraghor/nestjs-typed"],
+    plugins: ["iot-cardboard-js"],
 };
 ```
 
 ## Rule Details
 
-### Rule: all-properties-have-explicit-defined
+### Rule: debug-logging-disabled
 
-This rule checks that all properties of a class have an appropriate `@IsDefined()` or `@IsOptional()` decorator.
-
-This rule also checks that both `@IsDefined()` and `@IsOptional()` are not used on the same property because this doesn't make sense.
-
-The rule will ignore any classes that have 0 class-validator decorators. This is to avoid errors for classes that are not used for validation.
+This rule checks that any constant named with the value `debugLogging` has a value of `false`
 
 This PASSES - all properties are decorated correctly
 
 ```ts
-export class CreateOrganisationDto {
-    @IsDefined()
-    otherProperty!: MyClass;
-
-    @IsOptional()
-    someStringProperty?: string;
-}
+const debugLogging = false;
 ```
 
-This PASSES - no class validator decorators are used
+This FAILS - because the value is `true`
 
 ```ts
-export class CreateOrganisationDto {
-    otherProperty!: MyClass;
-
-    someStringProperty?: string;
-}
-```
-
-This FAILS - missing `@IsOptional()` on `someStringProperty`
-
-```ts
-export class CreateOrganisationDto {
-    @IsDefined()
-    otherProperty!: MyClass;
-    @IsString()
-    someStringProperty?: string;
-}
+const debugLogging = true;
 ```
