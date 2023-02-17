@@ -1,8 +1,5 @@
-![commit](https://badgen.net/github/last-commit/darraghoriordan/eslint-plugin-nestjs-typed/main)
-![npm](https://img.shields.io/npm/v/@darraghor/eslint-plugin-nestjs-typed.svg?color=red)
+![npm](https://img.shields.io/npm/v/@microsoft/eslint-plugin-cardboard-iot-js.svg?color=red)
 ![npm-tag](https://badgen.net/github/tag/darraghoriordan/eslint-plugin-nestjs-typed)
-![size](https://badgen.net/bundlephobia/minzip/@darraghor/eslint-plugin-nestjs-typed?color=cyan)
-![types](https://badgen.net/npm/types/@darraghor/eslint-plugin-nestjs-typed?color=blue)
 
 ## Why use this package?
 
@@ -11,11 +8,11 @@ This package is really only intended to be used by the @microsoft/iot-cardboard-
 ## To install
 
 ```
-npm install --save-dev @darraghor/eslint-plugin-nestjs-typed
+npm install --save-dev @microsoft/eslint-plugin-cardboard-iot-js
 
 // or
 
-yarn add -D @darraghor/eslint-plugin-nestjs-typed
+yarn add -D @microsoft/eslint-plugin-cardboard-iot-js
 ```
 
 Then update your eslint with the plugin import and add the recommended rule set

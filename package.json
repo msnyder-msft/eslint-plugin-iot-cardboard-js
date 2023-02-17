@@ -18,10 +18,10 @@
             "main"
         ]
     },
-    "homepage": "",
+    "homepage": "https://github.com/msnyder-msft/eslint-plugin-iot-cardboard-js",
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "https://github.com/msnyder-msft/eslint-plugin-iot-cardboard-js"
     },
     "engines": {
         "node": ">=14"
