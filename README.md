@@ -7,7 +7,7 @@ This package is really only intended to be used by the @microsoft/iot-cardboard-
 
 ## To install
 
-```
+```ts
 npm install --save-dev @microsoft/eslint-plugin-cardboard-iot-js
 
 // or
@@ -42,7 +42,7 @@ This rule checks that all properties of a class have an appropriate `@IsDefined(
 This rule also checks that both `@IsDefined()` and `@IsOptional()` are not used on the same property because this doesn't make sense.
 
 The rule will ignore any classes that have 0 class-validator decorators. This is to avoid errors for classes that are not used for validation.
-
+d
 This PASSES - all properties are decorated correctly
 
 ```ts
